@@ -1,10 +1,13 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import { useTranslation, Trans } from 'react-i18next'
 
 function AboutCard() {
+  const { t, i18n } = useTranslation()
   return (
     <Card className="quote-card-view">
+      <Trans i18nKey={"quote-card-view"}>
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
@@ -33,6 +36,8 @@ function AboutCard() {
           <footer className="blockquote-footer">Nelson Mandela</footer>
         </blockquote>
       </Card.Body>
+      </Trans>
+      {t('new.key', '')}
     </Card>
   );
 }

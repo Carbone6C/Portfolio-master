@@ -55,7 +55,7 @@ function Home2() {
               </i>
             </p>
             </Trans>
-            {t('new.key', 'this will be added automatically')}
+            {t('new.key', '')}
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

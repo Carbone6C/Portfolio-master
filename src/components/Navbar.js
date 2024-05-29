@@ -46,6 +46,7 @@ function NavBar() {
       expand="md"
       className={navColour ? "sticky" : "navbar"}
     >
+      <Trans i18nKey={"navbar"}>
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
@@ -137,6 +138,8 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
+      </Trans>
+      {t('new.key', '')}
     </Navbar>
   );
 }

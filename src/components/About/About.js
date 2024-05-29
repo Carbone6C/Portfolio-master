@@ -6,10 +6,13 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { useTranslation, Trans } from 'react-i18next'
 
 function About() {
+  const { t, i18n } = useTranslation()
   return (
     <Container fluid className="about-section">
+      <Trans i18nKey={"about-section"}>
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -47,6 +50,8 @@ function About() {
 
         <Github />
       </Container>
+      </Trans>
+      {t('new.key', '')}
     </Container>
   );
 }

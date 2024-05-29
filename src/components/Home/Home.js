@@ -4,11 +4,14 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { useTranslation, Trans } from 'react-i18next'
 
 function Home() {
+  const { t, i18n } = useTranslation()
   return (
     <section>
       <Container fluid className="home-section" id="home">
+        <Trans i18nKey={"home-section"}>
         <Particle />
         <Container className="home-content">
           <Row>
@@ -40,6 +43,8 @@ function Home() {
             </Col>
           </Row>
         </Container>
+        </Trans>
+        {t('new.key', '')}
       </Container>
       <Home2 />
     </section>
