@@ -52,6 +52,7 @@ function ResumeNew() {
           </Button>
         </Row>
         </Trans>
+        {t('new.key', '')}
       </Container>
     </div>
   );

@@ -4,14 +4,17 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-// import Kasa from "../../Assets/Projects/kasa.png";
+import Sophie from "../../Assets/Projects/Sophie bluel.png";
+import Nina from "../../Assets/Projects/Nina Carducci.png";
+import Kasa from "../../Assets/Projects/Kasa.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import { useTranslation, Trans } from 'react-i18next'
 
 function Projects() {
+  const { t } = useTranslation()
   return (
     <Container fluid className="project-section">
+      <Trans i18nKey={"project-section"}>
       <Particle />
       <Container>
         <h1 className="project-heading">
@@ -23,10 +26,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              // imgPath={Kasa}
+              imgPath={Kasa}
               isBlog={false}
               title="Kasa"
-              description="Appartment renting web-site with react.js"
+              description={t("projectDescription.kasa")}
               ghLink="https://github.com/Carbone6C/Kasa"
               demoLink=""
             />
@@ -34,10 +37,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Nina}
               isBlog={false}
               title="Nina Carducci"
-              description="Optimization of a Photographer Website with lighthouse and WAVE"
+              description={t("projectDescription.nina")}
               ghLink="https://github.com/Carbone6C/NinaCarducci"
               demoLink=""
             />
@@ -45,10 +48,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={Sophie}
               isBlog={false}
               title="Sophie Bluel"
-              description="Creation of an interior designer website with Javascript"
+              description={t("projectDescription.sophie")}
               ghLink="https://github.com/Carbone6C/Portfolio-architecte-sophie-bluel"
               demoLink=""              
             />
@@ -59,7 +62,7 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Print It"
-              description="My first website using Javascript"
+              description={t("projectDescription.printit")}
               ghLink="https://github.com/Carbone6C/Print-it-JS"
               demoLink=""
             />
@@ -70,7 +73,7 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="724Events"
-              description="Debugging of a website in React.js"
+              description={t("projectDescription.724events")}
               ghLink="https://github.com/Carbone6C/Debuggez-une-application-React.JS-main"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
@@ -88,6 +91,8 @@ function Projects() {
           </Col>
         </Row>
       </Container>
+      </Trans>
+      {t('new.key', '')}
     </Container>
   );
 }
