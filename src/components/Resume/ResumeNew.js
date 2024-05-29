@@ -6,9 +6,11 @@ import pdf from "../../Assets/../Assets/Soumyajit_Behera-BIT_MESRA.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { useTranslation, Trans } from 'react-i18next'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
+  const { t } = useTranslation()
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -18,6 +20,7 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
+      <Trans i18nKey={"resume-section"}>
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
@@ -48,6 +51,7 @@ function ResumeNew() {
             &nbsp;Download CV
           </Button>
         </Row>
+        </Trans>
       </Container>
     </div>
   );

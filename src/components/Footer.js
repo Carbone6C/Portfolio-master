@@ -9,7 +9,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { useTranslation, Trans } from 'react-i18next'
 
 function Footer() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   let date = new Date();
   let year = date.getFullYear();
   return (

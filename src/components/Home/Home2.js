@@ -11,13 +11,14 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { useTranslation, Trans } from 'react-i18next'
 
 function Home2() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   return (
     <Container fluid className="home-about-section" id="about">
+      <Trans i18nKey={"home-about-section"}>
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <Trans i18nKey={"home-about-description"}>
+            
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
@@ -54,8 +55,7 @@ function Home2() {
                 <b className="purple"> React.js and Next.js</b>
               </i>
             </p>
-            </Trans>
-            {t('new.key', '')}
+            
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
@@ -114,6 +114,8 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+      </Trans>
+      {t('new.key', '')}
     </Container>
   );
 }

@@ -1,43 +1,42 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
-import { useTranslation, Trans } from 'react-i18next'
+import { useTranslation, Trans } from 'react-i18next';
 
 function AboutCard() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation();
+
   return (
     <Card className="quote-card-view">
-      <Trans i18nKey={"quote-card-view"}>
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Fu Danny </span>
-            from <span className="purple"> Paris. France</span>
+        
+        <p style={{ textAlign: "justify" }}>
+            <Trans i18nKey="quote-card-view">
+            Hi Everyone, I am <span className="purple">Fu Danny</span> from <span className="purple">Paris, France</span>.
             <br />
             I am currently studying software development on OpenClassroom.
             <br />
             Apart from coding, some other activities that I love to do!
-          </p>
+          </Trans>
+        </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> {t('playingGames')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Practicing sports
+              <ImPointRight /> {t('practicingSports')}
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> {t('travelling')}
             </li>
           </ul>
-
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Le courage n'est pas l'absence de peur, mais la capacité de vaincre ce qui fait peur."{" "}
+            {t('quote-footer')}
           </p>
-          <footer className="blockquote-footer">Nelson Mandela</footer>
+          <footer className="blockquote-footer">{t('quote-author')}</footer>
         </blockquote>
       </Card.Body>
-      </Trans>
-      {t('new.key', '')}
     </Card>
   );
 }

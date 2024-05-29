@@ -4,7 +4,7 @@ import { Row } from "react-bootstrap";
 import { useTranslation, Trans } from 'react-i18next'
 
 function Github() {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
       <Trans i18nKey={"github"}>
