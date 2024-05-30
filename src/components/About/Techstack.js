@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import { TiHtml5 } from "react-icons/ti";
+import { IoLogoCss3 } from "react-icons/io5";
 import {
   DiJavascript1,
   DiReact,
@@ -17,7 +18,10 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <TiHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <IoLogoCss3 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
