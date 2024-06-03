@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import events from "../../Assets/Projects/events.png";
+import ArgentBank from "../../Assets/Projects/ArgentBank.png";
 import Sophie from "../../Assets/Projects/Sophie bluel.png";
 import Nina from "../../Assets/Projects/Nina Carducci.png";
 import Kasa from "../../Assets/Projects/Kasa.png";
-import suicide from "../../Assets/Projects/suicide.png";
 import { useTranslation, Trans } from 'react-i18next'
 
 function Projects() {
@@ -59,34 +58,21 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Print It"
-              description={t("projectDescription.printit")}
-              ghLink="https://github.com/Carbone6C/Print-it-JS"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
+              imgPath={events}
               isBlog={false}
               title="724Events"
               description={t("projectDescription.724events")}
               ghLink="https://github.com/Carbone6C/Debuggez-une-application-React.JS-main"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={ArgentBank}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
+              title="ArgentBank"
               description="Modification of a bank website written from Javascript to React.js and implementation of redux"
               ghLink="https://github.com/Carbone6C/ArgentBank"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>

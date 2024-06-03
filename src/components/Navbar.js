@@ -102,6 +102,7 @@ function NavBar() {
               {Object.keys(lngs).map((lng) => (
                 <button 
                   type="button" 
+                  class="button-13"
                   key={lng} 
                   onClick={() => i18n.changeLanguage(lng)} 
                   disabled={i18n.resolvedLanguage === lng}
