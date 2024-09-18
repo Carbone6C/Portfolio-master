@@ -30,7 +30,7 @@ function Projects() {
               title="Kasa"
               description="Redesign of a real estate rental website using React"
               ghLink="https://github.com/Carbone6C/Kasa"
-              demoLink=""
+              demoLink="https://carbone-kasa.netlify.app"
             />
           </Col>
 
@@ -41,7 +41,7 @@ function Projects() {
               title="Nina Carducci"
               description="Optimization of the website of a photographer"
               ghLink="https://github.com/Carbone6C/NinaCarducci"
-              demoLink=""
+              demoLink="carbone-nina.netlify.app"
             />
           </Col>
 
@@ -63,6 +63,7 @@ function Projects() {
               title="724Events"
               description="Migration of the 724events one-page website from an incomplete implementation to a fully functional version, including debugging, task completion, and integration of a recipe book for comprehensive testing."
               ghLink="https://github.com/Carbone6C/Debuggez-une-application-React.JS-main"
+              demoLink="https://carbone-724events.netlify.app"
             />
           </Col>
 
