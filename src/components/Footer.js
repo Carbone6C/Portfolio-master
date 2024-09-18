@@ -10,8 +10,6 @@ import { useTranslation, Trans } from 'react-i18next'
 
 function Footer() {
   const { t } = useTranslation()
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Trans i18nKey={"footer"}>

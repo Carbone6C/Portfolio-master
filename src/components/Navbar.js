@@ -12,16 +12,16 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
-import {useTranslation, Trans} from 'react-i18next'
+import {/*useTranslation,*/ Trans} from 'react-i18next'
 
 function NavBar() {
 
-  const {t, i18n} = useTranslation()
+  // const {t, i18n} = useTranslation()
 
-  const lngs = {
-    en: { nativeName: 'English' },
-    fr: { nativeName: 'Français' },
-  }
+  // const lngs = {
+  //   en: { nativeName: 'English' },
+  //   fr: { nativeName: 'Français' },
+  // }
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -99,7 +99,7 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              {Object.keys(lngs).map((lng) => (
+              {/* {Object.keys(lngs).map((lng) => (
                 <button 
                   type="button" 
                   class="button-13"
@@ -109,14 +109,14 @@ function NavBar() {
                 >
                   {lngs[lng].nativeName}
                 </button>
-              ))}
+              ))} */}
               
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
       </Trans>
-      {t('new.key', '')}
+      {/* {t('new.key', '')} */}
     </Navbar>
   );
 }
