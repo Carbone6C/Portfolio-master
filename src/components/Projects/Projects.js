@@ -28,7 +28,7 @@ function Projects() {
               imgPath={Kasa}
               isBlog={false}
               title="Kasa"
-              description={t("projectDescription.kasa")}
+              description="Redesign of a real estate rental website using React"
               ghLink="https://github.com/Carbone6C/Kasa"
               demoLink=""
             />
@@ -39,7 +39,7 @@ function Projects() {
               imgPath={Nina}
               isBlog={false}
               title="Nina Carducci"
-              description={t("projectDescription.nina")}
+              description="Optimization of the website of a protographer"
               ghLink="https://github.com/Carbone6C/NinaCarducci"
               demoLink=""
             />
@@ -50,7 +50,7 @@ function Projects() {
               imgPath={Sophie}
               isBlog={false}
               title="Sophie Bluel"
-              description={t("projectDescription.sophie")}
+              description="Development of an interior designer's portfolio website using Javascript"
               ghLink="https://github.com/Carbone6C/Portfolio-architecte-sophie-bluel"
               demoLink=""              
             />
@@ -61,7 +61,7 @@ function Projects() {
               imgPath={events}
               isBlog={false}
               title="724Events"
-              description={t("projectDescription.724events")}
+              description="Migration of the 724events one-page website from an incomplete implementation to a fully functional version, including debugging, task completion, and integration of a recipe book for comprehensive testing."
               ghLink="https://github.com/Carbone6C/Debuggez-une-application-React.JS-main"
             />
           </Col>
