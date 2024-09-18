@@ -39,7 +39,7 @@ function Projects() {
               imgPath={Nina}
               isBlog={false}
               title="Nina Carducci"
-              description="Optimization of the website of a protographer"
+              description="Optimization of the website of a photographer"
               ghLink="https://github.com/Carbone6C/NinaCarducci"
               demoLink=""
             />
